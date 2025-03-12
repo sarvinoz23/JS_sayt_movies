@@ -13,10 +13,11 @@ fetch('https://6560acc483aba11d99d151a5.mockapi.io/api/movies')
           <span class="card-title">${data[i].movieName}</span>
         </div>
         <div class="card-content">
-          <p>${data[i].starring.slice(0, 100)}....</p>
+          <p>${data[i].starring}....</p>
+          <p>${data[i].releasedDate}....</p>
         </div>
         <div class="card-action">
-        <a href=${data[i].strYoutube} target="_blank">Watch reciept</a>
+        <a href=${data[i]. trailer} target="_blank">Watch reciept</a>
         </div>
       </div>
     </div>
