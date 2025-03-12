@@ -1,0 +1,27 @@
+fetch('https://6560acc483aba11d99d151a5.mockapi.io/api/movies')
+    .then((res) => res.json())
+    .then((data) => {
+        console.log(data)
+        for (let i = 0; i < data.length; i++){
+            let box = document.querySelector(".box");
+            box.innerHTML +=`       
+             <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-image">
+          <img src=${data[i].movieImg}>
+          <span class="card-title">${data[i].movieName}</span>
+        </div>
+        <div class="card-content">
+          <p>${data[i].starring.slice(0, 100)}....</p>
+        </div>
+        <div class="card-action">
+        <a href=${data[i].strYoutube} target="_blank">Watch reciept</a>
+        </div>
+      </div>
+    </div>
+  </div> `
+        }
+    })
+
+

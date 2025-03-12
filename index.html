@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>Document</title>
+    <style>
+      @media (max-width: 768px) {
+        body {
+          font-size: 14px;
+        }
+        .container {
+          width: 100%;
+          padding: 10px;
+        }
+      }
+      .box {
+        width: 100%;
+        height:auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div style="background-color: aqua" class="nav-wrapper">
+        <a href="#" class="brand-logo center">Movies</a>
+      </div>
+    </nav>
+    <div class="box"></div>
+    <footer style="background-color: aqua" class="page-footer">
+      <div class="footer-copyright">
+        <div class="container">
+          © 2025 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>
